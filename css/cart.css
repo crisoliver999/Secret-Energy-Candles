@@ -1,0 +1,156 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+#cart {
+    padding: 3em 0;
+    padding-top: 9vh;
+    min-height: 70vh;
+}
+
+.cart {
+    max-width: 1000px;
+    width: 85%;
+    margin: 0 auto;
+}
+.cart-title {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.cart-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 20% 20%;
+    grid-template-columns: 60% 20% 20%;
+}
+
+.list-title {
+    color: var(--pink);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.list-item {
+    border-top: 2px solid var(--pink);
+    grid-column: 1 / -1;
+    padding: 1.5em 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 20% 20%;
+    grid-template-columns: 60% 20% 20%;
+}
+
+.cart-list:last-child {
+    border-bottom: 2px solid var(--pink);
+}
+
+.empty {
+    text-align: center;
+    margin: 0;
+}
+
+.item-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.item-details {
+    margin: 0 0 0 1em;
+}
+
+.item-name,
+.item-description {
+    margin: 0;
+}
+
+.item-description {
+    font-size: 0.65rem;
+}
+
+.product {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 /2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.quantity {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    text-align: center;
+}
+
+.price {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.price p {
+    margin: 0;
+}
+.cart-submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.check {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.check > label {
+    padding-left: 0.5em;
+}
+
+.btn-cart {
+    color: white;
+    background-color: var(--pink);
+    padding: 1em 1em;
+    width: 40%;
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+}
+
+.inactive {
+    opacity: 0.2;
+}

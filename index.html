@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Secret Energy Candles</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+        />
+    </head>
+    <body>
+        <nav id="nav">
+            <div class="nav-bar container-nav">
+                <div class="menu-mobile-div">
+                    <a
+                        href="javascript:void(0)"
+                        id="mobile-menu"
+                        class="menu-icon"
+                        onclick="openNav()"
+                    >
+                        <i class="fas fi-rr-menu-burger"></i>
+                    </a>
+                </div>
+                <img
+                    src="./imgs/Icon Home.png"
+                    alt="secret energy candles logo"
+                    class="nav-icon"
+                />
+                <ul id="menu" class="nav-menu">
+                    <li class="close-nav">
+                        <a
+                            href="javascript:void(0)"
+                            onclick="closeNav()"
+                            class="menu-icon"
+                            ><i class="fas fi-rr-cross-small"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="./about-us.html" class="menu-item"
+                            >sobre n&oacute;s</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./shop.html" class="menu-item dropbtn">loja</a>
+                    </li>
+                    <li>
+                        <a href="./blog-velas.html" class="menu-item"
+                            >as nossas velas</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./blog-pedras.html" class="menu-item"
+                            >as pedras</a
+                        >
+                    </li>
+                    <li><a href="./index.html" class="menu-item">site</a></li>
+                </ul>
+                <div class="right-nav">
+                    <a href="#" id="search" class="menu-item">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="./cart.html" id="cart-btn" class="menu-item">
+                        <i class="fas fi-rr-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div id="overlay"></div>
+        <section id="home" class="home home-background">
+            <img
+                src="./imgs/secretenergycandleslogo.png"
+                alt="secret energy candles logo"
+                id="main-logo"
+            />
+        </section>
+        <section id="about-us" class="container">
+            <img src="" alt="" />
+
+            <img src="./imgs/IMG_8771.jpg" alt="" class="section-img" />
+            <div class="section-content">
+                <h2 class="section-title">quem somos</h2>
+                <p id="short-text" class="section-text light-pink">
+                    A Secret Energy Candle, tem em si toda uma ess&ecirc;ncia de
+                    destaque. O segredo destas velas &eacute; a energia que cada
+                    uma destas transmite, conforme o gosto de cada um dos nossos
+                    clientes.
+                </p>
+                <a
+                    href="javascript:void(0)"
+                    id="drop-text"
+                    class="btn"
+                    onclick="dropText()"
+                    >ler mais</a
+                >
+                <p id="long-text" class="section-text hidden light-pink">
+                    A Secret Energy Candle, tem em si toda uma ess&ecirc;ncia de
+                    destaque. O segredo destas velas &eacute; a energia que cada
+                    uma destas transmite, conforme o gosto de cada um dos nossos
+                    clientes. Pretendo-mos oferecer aos nossos clientes a
+                    harmonia e conjugue de uma fragr&acirc;ncia a gosto, uma
+                    pe&ccedil;a decorativa, mas tamb&eacute;m uma energia
+                    positiva atrav&eacute;s de uma pedra ou cristal. A Secret
+                    Energy Candle nasce de um amor pessoal, pela
+                    fragr&acirc;ncia que preenche uma casa conjugada &agrave;
+                    decora&ccedil;&atilde;o e &agrave; positividade para as
+                    pessoas que as rodeiam. A nossa casa, que no fundo &eacute;
+                    o nosso refugio, deve ser o nosso lugar de conforto e de
+                    paz. Estas velas carecem de uma pedra ou cristal que mesmo
+                    depois de todo o processo de queima da mesma, manter&aacute;
+                    sempre a sua maior ess&ecirc;ncia, pois este cristal
+                    &eacute; para si! Desta forma, pretendemos com esta vela,
+                    tornar o mundo dos nossos clientes um mundo melhor, cheio de
+                    positivismo, boas energias, pac&iacute;fico e harmonioso.
+                    Temos tamb&eacute;m no nosso site um espa&ccedil;o para o
+                    nosso blog, onde temos informa&ccedil;&otilde;es
+                    relativamente &aacute;s pedras, o seu significado, o local
+                    onde surte mais efeito, e muito mais.
+                </p>
+                <a
+                    href="javascript:void(0)"
+                    id="up-text"
+                    class="btn hidden"
+                    onclick="upText()"
+                    >ler menos</a
+                >
+            </div>
+        </section>
+        <section id="shop" class="light-pink">
+            <div class="container">
+                <img src="./imgs/IMG_8777.jpg" alt="" class="section-img" />
+                <div class="section-content">
+                    <p class="section-text-shop bege">
+                        Venha conhecer os nossos produtos!
+                    </p>
+                    <a href="#" class="btn">loja</a>
+                </div>
+            </div>
+        </section>
+        <section id="our-products" class="container">
+            <img src="./imgs/IMG_8727.jpg" alt="" class="section-img" />
+            <div class="section-content">
+                <h2 class="section-title">as nossas velas</h2>
+                <p class="section-text light-pink">
+                    Cri&aacute;mos um espa&ccedil;o no nosso site onde iremos
+                    falar com mais detalhe das nossas velas, materiais, pedras e
+                    muito mais!
+                </p>
+                <a href="./blog.html" class="btn">ler blog</a>
+            </div>
+        </section>
+        <!-- <section id="feedback" class="container">
+            <h2 class="section-title">feedback</h2>
+            <div class="feedback-container light-pink">
+                <a href="#" class="feedback-btn">
+                    <span class="chevron left"></span>
+                </a>
+                <p class="feedback light-pink">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus repellendus repudiandae animi iste, minima corporis
+                    cum sunt illo minus assumenda velit blanditiis a qui modi
+                    repellat, ipsum similique deserunt harum?
+                </p>
+                <a href="#" class="feedback-btn">
+                    <span class="chevron right"></span>
+                </a>
+            </div>
+            <div class="carousel-nav">
+                <div class="carousel-nav-position active"></div>
+                <div class="carousel-nav-position"></div>
+                <div class="carousel-nav-position"></div>
+                <div class="carousel-nav-position"></div>
+                <div class="carousel-nav-position"></div>
+                <div class="carousel-nav-position"></div>
+                <div class="carousel-nav-position"></div>
+            </div>
+        </section> -->
+        <section id="contact-us" class="container">
+            <h2 class="section-title-form">fale connosco</h2>
+            <form class="contact-us" action="./new-message.php">
+                <div class="name-email">
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Nome*"
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="E-mail*"
+                        required
+                    />
+                </div>
+                <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Assunto"
+                />
+                <br />
+                <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Mensagem*"
+                    required
+                ></textarea>
+                <br />
+                <button class="form-btn" type="submit">enviar</button>
+            </form>
+        </section>
+        <footer id="footer" class="footer light-pink">
+            <div class="container">
+                <div class="footer-left">
+                    <a
+                        href="javascript:void(0)"
+                        class="tandc-btn"
+                        onclick="openTandC()"
+                        >termos e condi&ccedil;&otilde;es</a
+                    >
+                </div>
+                <div class="footer-center">
+                    <a
+                        href="https://www.instagram.com/secretenergycandle/"
+                        target="_blank"
+                        class="sm-link"
+                        ><img
+                            src="./imgs/Instagram.png"
+                            alt="instagram"
+                            id="instagram"
+                    /></a>
+                    <a
+                        href="https://www.facebook.com/Secret-energy-candle-104733131745775"
+                        target="_blank"
+                        class="sm-link"
+                    >
+                        <img
+                            src="./imgs/Facebook.png"
+                            alt="facebook"
+                            id="facebook"
+                    /></a>
+                </div>
+                <div class="footer-right">
+                    <p class="payment-footer">m&eacute;todos de pagamento</p>
+                    <div class="payment-logos">
+                        <img src="./imgs/MBWay.png" alt="mbway" id="mbway" />
+                        <img
+                            src="./imgs/multibanco-e1599554768413.png"
+                            alt="multibanco"
+                            id="multibanco"
+                        />
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

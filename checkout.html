@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Secret Energy Candles</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/checkout.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+        />
+    </head>
+    <body>
+        <div class="modal">
+            <h2>finalizar compra</h2>
+            <p>
+                Ir&aacute; receber um e-mail com os dados necess&aacute;rios
+                para finalizar a sua compra.
+            </p>
+            <form id="form" method="post" action="./submit.php">
+                <label for="name"
+                    >Nome completo*<br /><input
+                        type="text"
+                        name="name"
+                        id="name-chechout"
+                        required /></label
+                ><br />
+                <label for="email"
+                    >O seu e-mail*<br /><input
+                        type="email"
+                        name="email"
+                        id="email-chechout"
+                        required /></label
+                ><br />
+                <label for="morada"
+                    >Morada*<br /><input
+                        type="text"
+                        name="morada"
+                        id="morada-chechout"
+                        required /></label
+                ><br />
+                <label for="codigo-postal"
+                    >C&oacute;digo-Postal*<br /><input
+                        type="text"
+                        name="cp"
+                        id="cp-chechout"
+                        required
+                    /> </label
+                ><br />
+                <textarea name="order" id="order" cols="30" rows="10"></textarea>
+                <textarea name="subtotal" id="subtotal" cols="30" rows="10"></textarea>
+                <textarea name="shipping" id="shipping" cols="30" rows="10"></textarea>
+                <textarea name="total" id="total" cols="30" rows="10"></textarea>
+                <button type="submit" id="submit" class="btn-msg">enviar</button>
+            </form>
+        </div>
+        <script src="./js/checkout.js"></script>
+    </body>
+</html>

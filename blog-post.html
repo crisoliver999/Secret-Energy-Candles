@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Secret Energy Candles</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <script
+            src="https://kit.fontawesome.com/700aa3ba97.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav id="nav">
+            <div class="nav-bar container-nav">
+                <div class="menu-mobile-div">
+                    <a
+                        href="javascript:void(0)"
+                        id="mobile-menu"
+                        onclick="openNav()"
+                    >
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+                <img
+                    src="./imgs/Icon Home.png"
+                    alt="secret energy candles logo"
+                    class="nav-icon"
+                />
+                <ul id="menu" class="nav-menu">
+                    <li class="close-nav">
+                        <a href="javascript:void(0)" onclick="closeNav()"
+                            ><i class="fas fa-times"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="./about-us" class="menu-item"
+                            >sobre n&oacute;s</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="javascript:void(0)"
+                            class="menu-item dropbtn"
+                            onclick="dropMenu()"
+                            >loja
+                            <span class="chevron bottom loja dropbtn"></span
+                        ></a>
+                    </li>
+                    <ul id="dropdown" class="menu-submenu">
+                        <li>
+                            <a href="#" class="submenu-item"
+                                >Todos os Produtos</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="submenu-item">Velas com Pedra</a>
+                        </li>
+                        <li>
+                            <a href="#" class="submenu-item">Velas sem Pedra</a>
+                        </li>
+                        <li>
+                            <a href="#" class="submenu-item"
+                                >Acess&oacute;rios</a
+                            >
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="./blog-velas.html" class="menu-item"
+                            >as nossas velas</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./blog-pedras.html" class="menu-item">as pedras</a>
+                    </li>
+                    <li><a href="./index.html" class="menu-item">site</a></li>
+                </ul>
+                <div class="right-nav">
+                    <a href="#" id="search" class="menu-item">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" id="cart-btn" class="menu-item">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div id="overlay"></div>
+        <section id="home" class="home blog">
+            <img
+                src="./imgs/secretenergycandleslogo.png"
+                alt="secret energy candles logo"
+                id="main-logo"
+            />
+        </section>
+
+        <div class="img-carousel container">
+            <img src="./imgs/pexels-anna-shvets-5760870.jpg" alt="" />
+        </div>
+        <div class="carousel-nav">
+            <div class="carousel-nav-position active"></div>
+            <div class="carousel-nav-position"></div>
+            <div class="carousel-nav-position"></div>
+        </div>
+
+        <section id="featured"></section>
+        <section id="blog-nav">
+            <a href="javascript:void0" id="nav-left" class="hidden" onclick="prevPage()">
+                <span class="chevron left"></span>
+            </a>
+            <p id="page-nav">1</p>
+            <a href="javascript:void0" id="nav-right" onclick="nextPage()">
+                <span class="chevron right"></span>
+            </a>
+        </section>
+        <section id="contact-us" class="container">
+            <h2 class="section-title-form">fale connosco</h2>
+            <form action="">
+                <div class="name-email">
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Nome*"
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="E-mail*"
+                        required
+                    />
+                </div>
+                <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Assunto"
+                />
+                <br />
+                <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Mensagem*"
+                    required
+                ></textarea>
+                <br />
+                <button class="form-btn" type="submit">enviar</button>
+            </form>
+        </section>
+        <footer id="footer" class="footer light-pink">
+            <div class="container">
+                <div class="footer-left">
+                    <a
+                        href="javascript:void(0)"
+                        class="tandc-btn"
+                        onclick="openTandC()"
+                        >termos e condi&ccedil;&otilde;es</a
+                    >
+                </div>
+                <div class="footer-center">
+                    <a
+                        href="https://www.instagram.com/secretenergycandle/"
+                        target="_blank"
+                        class="sm-link"
+                        ><img
+                            src="./imgs/Instagram.png"
+                            alt="instagram"
+                            id="instagram"
+                    /></a>
+                    <a
+                        href="https://www.facebook.com/Secret-energy-candle-104733131745775"
+                        target="_blank"
+                        class="sm-link"
+                    >
+                        <img
+                            src="./imgs/Facebook.png"
+                            alt="facebook"
+                            id="facebook"
+                    /></a>
+                </div>
+                <div class="footer-right">
+                    <p class="payment-footer">m&eacute;todos de pagamento</p>
+                    <div class="payment-logos">
+                        <img src="./imgs/MBWay.png" alt="mbway" id="mbway" />
+                        <img
+                            src="./imgs/multibanco-e1599554768413.png"
+                            alt="multibanco"
+                            id="multibanco"
+                        />
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/script.js"></script>
+        <script src="./js/velas.js"></script>
+    </body>
+</html>
