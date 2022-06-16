@@ -46,8 +46,7 @@ async function getFilter() {
     const fetchData = {
         method: "GET",
         headers: {
-            Authorization:
-                "Basic Y2tfZThlZGMyNTEwM2Q1NTcxZTViZTMyZWUzZmZhMzRiMmU3MTgzYzVmZTpjc19hNmRhOGUyNWQ3MGJiMmM5MDNjMjdmYWIxODIyODIwNWI2YWY2OTlh",
+            Authorization: //key removed for security
         },
     };
     const categoriesPromise = await fetch(url, fetchData);
@@ -75,8 +74,7 @@ async function filterProducts(productId) {
     const fetchData = {
         method: "GET",
         headers: {
-            Authorization:
-                "Basic Y2tfZThlZGMyNTEwM2Q1NTcxZTViZTMyZWUzZmZhMzRiMmU3MTgzYzVmZTpjc19hNmRhOGUyNWQ3MGJiMmM5MDNjMjdmYWIxODIyODIwNWI2YWY2OTlh",
+            Authorization: //key removed for security
         },
     };
     const categoriesPromise = await fetch(url, fetchData);
@@ -112,8 +110,7 @@ async function openItem(id) {
     const fetchData = {
         method: "GET",
         headers: {
-            Authorization:
-                "Basic Y2tfZThlZGMyNTEwM2Q1NTcxZTViZTMyZWUzZmZhMzRiMmU3MTgzYzVmZTpjc19hNmRhOGUyNWQ3MGJiMmM5MDNjMjdmYWIxODIyODIwNWI2YWY2OTlh",
+            Authorization: //key removed for security
         },
     };
     const productPromise = await fetch(url, fetchData);
