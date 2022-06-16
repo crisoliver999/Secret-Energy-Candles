@@ -7,8 +7,7 @@ async function getData() {
     const fetchData = {
         method: "GET",
         headers: {
-            Authorization:
-                "Basic Y2tfZThlZGMyNTEwM2Q1NTcxZTViZTMyZWUzZmZhMzRiMmU3MTgzYzVmZTpjc19hNmRhOGUyNWQ3MGJiMmM5MDNjMjdmYWIxODIyODIwNWI2YWY2OTlh",
+            Authorization: //key removed for security
         },
     };
 
